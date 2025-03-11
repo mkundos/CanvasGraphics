@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Other page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/page2.html" aria-current="page">Simple Game</a>
+      <a href="/sprites.html">Sprites</a>
+    </nav>
+    <main>
+      <h1>Simple game</h1>
+      <div class="container">
+        <div class="game-controls">
+          <button id="startGame" class="game-button">Start Game</button>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+      </div>
+    </main>
+    <script src="game.js" defer></script>
+  </body>
+</html>
