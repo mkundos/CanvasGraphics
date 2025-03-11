@@ -15,7 +15,7 @@ window.addEventListener('load', function() {
     class Character {
         constructor() {
             this.image = new Image();
-            this.image.src = 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png';
+            this.image.src = '/images/viking.jpg';
             this.spriteWidth = 16;
             this.spriteHeight = 18;
             this.width = 64;
@@ -124,7 +124,7 @@ window.addEventListener('load', function() {
 
     function animateParallax() {
         pCtx.clearRect(0, 0, parallaxCanvas.width, parallaxCanvas.height);
-        
+
         backgroundLayers.forEach(layer => {
             layer.update();
             layer.draw(pCtx);
@@ -133,7 +133,7 @@ window.addEventListener('load', function() {
         // Draw a simple character in the parallax scene
         pCtx.fillStyle = 'red';
         pCtx.fillRect(100, 200, 50, 50);
-        
+
         requestAnimationFrame(animateParallax);
     }
 
