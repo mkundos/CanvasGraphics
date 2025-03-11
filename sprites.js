@@ -15,7 +15,7 @@ window.addEventListener('load', function() {
     class Character {
         constructor() {
             this.image = new Image();
-            this.image.src = '/images/viking.jpg';
+            this.image.src = './images/viking.jpg';
             this.spriteWidth = 16;
             this.spriteHeight = 18;
             this.width = 64;
